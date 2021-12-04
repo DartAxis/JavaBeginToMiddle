@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Циклы «while» и «do while»</title>
+</head>
+<body>
+<h1>Циклы «while» и «do while»</h1>
+<br>
+Вопросы:<br>
+1) в чем отличие цикла while(){} от do{} while()?<br>
+<br>
+В том что do{} while(); выполниться хотябы раз.<br>
+<br>
+2) Можно в цикл while добавлять вложенные циклы for, do while?<br>
+<br>
+Можно<br>
+<br>
+3) Что произойдет при запуске этого кода:<br>
+<pre>
+do{
+    int a=100;
+    System.out.print(a++ + " ");
+} while(a<=100);
+</pre>
+<br>
+<br>
+Задачи:<br>
+<br>
+1) Построить таблицу  первых десяти целых, положительных степеней числа 3.<br>
+<br>
+3 в степени 1 = 3<br>
+3 в степени 2 = 9<br>
+3 в степени 3 = 27<br>
+3 в степени 4 = 81<br>
+3 в степени 5 = 243<br>
+3 в степени 6 = 729<br>
+3 в степени 7 = 2187<br>
+3 в степени 8 = 6561<br>
+3 в степени 9 = 19683<br>
+3 в степени 10 = 59049<br>
+<br>
+<pre>
+public static void main(String[] args) {
+    int number = 3; // Возводимое в степень число
+    int result = 1; // Результат возведения в степень
+    int power = 1; // Начальный показатель степени
+    while(power <= 10) { // условие входа в цикл
+        result = result * number;
+        System.out.println(number + " в степени " + power + " = " + result);
+        power++;
+    }
+}
+</pre>
+</body>
+</html>
